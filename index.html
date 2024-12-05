@@ -5,6 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .text-box {
+        display: flex;
+        justify-content: end;
+        flex-wrap: wrap;
+        align-content: end;
+      }
+      .bg-christmas-green {
+        background-color: #3D4D31;
+        color: #636C5C;
+      }
+      .bg-christmas-yellow {
+        background-color: #C8AB7C;
+        color: #E1CEB0;
+      }
+      .bg-christmas-red {
+        background-color: #722525;
+        color: #A15959;
+      }
+    </style>
 </head>
 </div>
 <body>
@@ -60,39 +80,81 @@
     </header>
     <main>
         <div class="mx-auto h-screen w-screen">
-            <div class="grid grid-cols-12 grid-rows-16 gap-4">
-                <div class="col-span-2 row-span-2 col-start-1 row-start-1 bg-red-800">
+            <div class="grid grid-cols-12 grid-rows-16 gap-4 h-full text-right">
+                <div class="col-span-2 row-span-2 col-start-1 row-start-1 bg-christmas-red text-box">
                     <p class="text-9xl font-sans">18</p>
                 </div>
-                <div class="col-span-2 row-span-3 row-start-1 bg-orange-300">23</div>
-                <div class="col-span-5 row-span-2 row-start-1 bg-red-800">01</div>
-                <div class="col-span-3 row-span-2 bg-green-950">11</div>
-                <div class="col-span-1 row-span-2 col-start-1 row-start-3  bg-orange-300">15</div>
-                <div class="col-span-1 row-span-5 col-start-2 bg-green-950">17</div>
-                <div class="col-span-2 row-span-2 col-start-3 bg-red-800">4</div>
-                <div class="col-span-5 row-span-3 col-start-5 row-start-3 bg-green-950">6</div>
-                <div class="col-span-3 row-span-5 row-start-3 col-start-10 bg-orange-300">21</div>
-                <div class="col-span-1 row-span-3 col-start-1 row-start-5 bg-green-950">3</div>
-                <div class="col-span-5 row-span-2 col-start-3 bg-orange-300">10</div>
-                <div class="col-span-2 row-span-2 bg-red-800">13</div>
-                <div class="col-span-1 row-span-2 col-start-1 bg-orange-300">12</div>
-                <div class="col-span-2 row-span-3 bg-green-950">22</div>
-                <div class="col-span-6 row-span-3 bg-red-800">24</div>
-                <div class="col-span-4 row-span-2 col-start-10 row-start-8 bg-green-950">9</div>
-                <div class="col-span-1 row-span-7 col-start-1 bg-red-800">14</div>
-                <div class="col-span-2 row-span-6 col-start-2 bg-orange-300">5</div>
-                <div class="col-span-2 row-span-6 bg-red-800">8</div>
-                <div class="col-span-2 row-span-6 bg-green-950">16</div>
-                <div class="col-span-2 row-span-6 bg-orange-300">2</div>
-                <div class="col-span-2 row-span-7 row-start-10 col-start-10 bg-red-800">20</div>
-                <div class="col-span-1 row-span-3 row-start-10 col-start-12 bg-orange-300">7</div>
-                <div class="col-span-1 row-span-4 col-start-12 row-start-15 bg-green-950">19</div>
+                <div class="col-span-2 row-span-3 row-start-1 bg-christmas-yellow text-box">
+                    <p class="text-9xl font-sans">23</p>
+                </div>
+                <div class="col-span-5 row-span-2 row-start-1 bg-christmas-red text-box">
+                    <p class="text-9xl font-sans">1</p>
+              </div>
+                <div class="col-span-3 row-span-2 bg-christmas-green text-box">
+                    <p class="text-9xl font-sans">11</p>
+              </div>
+                <div class="col-span-1 row-span-2 col-start-1 row-start-3 bg-christmas-yellow text-box">
+                    <p class="text-7xl font-sans">15</p>
+              </div>
+                <div class="col-span-1 row-span-5 col-start-2 bg-christmas-green text-box">
+                    <p class="text-6xl font-sans">17</p>
+              </div>
+                <div class="col-span-2 row-span-2 col-start-3 bg-christmas-red text-box">
+                    <p class="text-6xl font-sans">14</p>
+              </div>
+                <div class="col-span-5 row-span-3 col-start-5 row-start-3 bg-christmas-green text-box">
+                    <p class="text-9xl font-sans">6</p>
+              </div>
+                <div class="col-span-3 row-span-5 row-start-3 col-start-10 bg-christmas-yellow text-box">
+                    <p class="text-9xl font-sans">21</p>
+                </div>
+                <div class="col-span-1 row-span-3 col-start-1 row-start-5 bg-christmas-green text-box">
+                    <p class="text-7xl font-sans">3</p>
+              </div>
+                <div class="col-span-5 row-span-2 col-start-3 bg-christmas-yellow text-box">
+                    <p class="text-7xl font-sans">10</p>
+              </div>
+                <div class="col-span-2 row-span-2 bg-christmas-red text-box">
+                    <p class="text-7xl font-sans">13</p>
+              </div>
+                <div class="col-span-1 row-span-2 col-start-1 bg-christmas-yellow text-box">
+                    <p class="text-5xl font-sans">12</p>
+              </div>
+                <div class="col-span-2 row-span-3 bg-christmas-green text-box">
+                    <p class="text-8xl font-sans">22</p>
+              </div>
+                <div class="col-span-6 row-span-3 bg-christmas-red text-box">
+                  <p class="text-9xl font-sans">24</p>
+              </div>
+                <div class="col-span-3 row-span-2 col-start-10 row-start-8 bg-christmas-green text-box">
+                  <p class="text-9xl font-sans">9</p>
+              </div>
+                <div class="col-span-1 row-span-7 col-start-1 bg-christmas-red text-box">
+                  <p class="text-7xl font-sans">14</p>
+              </div>
+                <div class="col-span-2 row-span-6 col-start-2 bg-christmas-yellow text-box">
+                  <p class="text-7xl font-sans">5</p>
+              </div>
+                <div class="col-span-2 row-span-6 bg-christmas-red text-box">
+                  <p class="text-7xl font-sans">8</p>
+              </div>
+                <div class="col-span-2 row-span-6 bg-christmas-green text-box">
+                  <p class="text-7xl font-sans">16</p>
+              </div>
+                <div class="col-span-2 row-span-6 bg-christmas-yellow text-box">
+                  <p class="text-7xl font-sans">2</p>
+              </div>
+                <div class="col-span-2 row-span-7 row-start-10 col-start-10 bg-christmas-red text-box">
+                  <p class="text-8xl font-sans">20</p>
+              </div>
+                <div class="col-span-1 row-span-3 row-start-10 col-start-12 bg-christmas-yellow text-box">
+                  <p class="text-7xl font-sans">7</p>
+              </div>
+                <div class="col-span-1 row-span-4 col-start-12 row-start-15 bg-christmas-green text-box">
+                  <p class="text-6xl font-sans">19</p>
+              </div>
             </div>
         </div>
     </main>
-
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
-
 </body>
 </html>
