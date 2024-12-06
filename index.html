@@ -23,18 +23,45 @@
       .text-box-with-image {
         justify-content: space-between;
       }
-      .bg-christmas-green {
+      .bg-christmas-green, .bg-christmas-green-stars {
         background-color: #3D4D31;
-        color: #636C5C;
+        color: #ffffff;
       }
-      .bg-christmas-yellow {
+      .bg-christmas-green-stars {
+        background-image: url('./img/grünesterne.png');
+        background-size: contain;
+      }
+      
+      .bg-christmas-yellow, .bg-christmas-yellow-stars {
         background-color: #C8AB7C;
-        color: #E1CEB0;
+        color: #644719;
       }
-      .bg-christmas-red {
+
+      .bg-christmas-yellow-stars {
+        background-image: url('./img/gelbesterne.png');
+        background-size: contain;
+      }
+
+      .bg-christmas-yellow, .bg-christmas-yellow-stars2 {
+        background-color: #C8AB7C;
+        color: #644719;
+      }
+
+      .bg-christmas-yellow-stars2 {
+        background-image: url('./img/gelbesterne2.png');
+        background-size: contain;
+      }
+
+      .bg-christmas-red, .bg-christmas-red-stars {
         background-color: #722525;
-        color: #A15959;
+        color: #ffffff;
       }
+      
+      .bg-christmas-red-stars {
+        background-image: url('./img/rotesterne.png');
+        background-size: contain;
+      }
+
       .bg-christmas-grey {
         background-color: #D4CDC8;
         color: #000;
@@ -99,84 +126,208 @@
     <main>
         <div class="mx-auto h-screen w-screen">
             <div class="grid grid-cols-12 grid-rows-16 gap-4 h-full text-right">
-                <div class="col-span-3 row-span-3 col-start-1 row-start-1 bg-christmas-red text-box">
+                <div class="col-span-3 row-span-3 col-start-1 row-start-1 bg-christmas-red">
+                  <div class="text-box-with-image hidden">
+                    <img class="size-28" src="./img/zuckerstange.png" alt="">
                     <p class="text-9xl">18</p>
+                  </div>
+                  <div class="p-4 h-full">
+                    <img class="object-cover h-full" src="./img/schneemann.jpg" />
+                  </div>
                 </div>
-                <div class="col-span-2 row-span-4 col-start-4 row-start-1 bg-christmas-yellow text-box">
+                <div class="col-span-2 row-span-4 col-start-4 row-start-1 bg-christmas-yellow">
+                  <div class="text-box hidden">
+                    <img class="size-52" src="./img/schnee.png" alt="">
                     <p class="text-9xl">23</p>
                 </div>
-                <div class="col-span-4 row-span-2 col-start-6 row-start-1 bg-christmas-red text-box">
+                <div class="p-4">
+                  <p class="text-4xl">Mit einem Mal sieht alles fröhlich aus, es leuchtet hell im ganzen Haus. 
+                    Die Fenster, sie sind bunt geschmückt, Weihnachten das Herz entzückt.</p>
+                </div>
+              </div>
+                <div class="col-span-4 row-span-1 col-start-6 row-start-1 bg-christmas-red">
+                  <div class="text-box hidden">
                     <p class="text-9xl">1</p>
               </div>
-                <div class="col-span-3 row-span-3 col-start-10 bg-christmas-green text-box">
+              <div class="p-4">
+                <p class="text-xl">Die Botschaft von Weihnachten: Es gibt keine größere Kraft als die Liebe. Sie überwindet den Hass wie das Licht die Finsternis.</p>
+              </div>
+            </div>
+                <div class="col-span-3 row-span-3 col-start-10 bg-christmas-green">
+                  <div class="text-box-with-image hidden bg.christmas.green.stars">
                     <p class="text-9xl">11</p>
               </div>
-                <div class="col-span-2 row-span-1 col-start-1 row-start-4 bg-christmas-yellow text-box">
+              <div class="p-4 h-full">
+                <img class="object-cover h-full" src="./img/kutsche.jpg" />
+              </div>
+            </div>
+                <div class="col-span-2 row-span-1 col-start-1 row-start-4 bg-christmas-yellow">
+                  <div class="text-box-with-image hidden">
                     <p class="text-7xl">15</p>
               </div>
-                <div class="col-span-1 row-span-4 col-start-3 row-start-4 bg-christmas-green text-box">
+              <div class="p-4 h-full">
+                <img class="object-cover h-full" src="./img/bänke.jpg" />
+              </div>
+            </div>
+                <div class="col-span-1 row-span-4 col-start-3 row-start-4 bg-christmas-green">
+                  <div class="text-box-with-image hidden">
                     <p class="text-8xl">17</p>
               </div>
-                <div class="col-span-2 row-span-1 col-start-4 bg-christmas-red text-box">
+              <div class="p-4 h-full">
+                <img class="object-cover h-full" src="./img/schneemann2.1.jpg" />
+              </div>
+            </div>
+                <div class="col-span-2 row-span-1 col-start-4 bg-christmas-red">
+                  <div class="text-box hidden">
                     <p class="text-7xl">4</p>
               </div>
-                <div class="col-span-4 row-span-3 col-start-6 row-start-3 bg-christmas-green text-box-with-image">
-                    <img class="size-36" src="./img/christmas-tree2.svg" alt="">
+              <div class="p-4">
+                <p class="text-m">Das größte Weihnachtsgeschenk ist, wenn wir erkennen dürfen, mit wie vielen Dingen wir bereits gesegnet sind.</p>
+              </div>
+            </div>
+                <div class="col-span-4 row-span-4 col-start-6 row-start-2 bg-christmas-green">
+                  <div class="text-box-with-image hidden">
+                    <img class="size-56" src="./img/bäume.png" alt="">
                     <p class="text-9xl">6</p>
               </div>
-                <div class="col-span-3 row-span-5 row-start-4 col-start-10 bg-christmas-yellow text-box-with-image">
-                    <img class="size-36" src="./img/candle.svg" alt="">
+              <div class="p-4 h-full">
+                <img class="object-cover h-full" src="./img/pferde2.jpg" />
+              </div>
+            </div>
+                <div class="col-span-3 row-span-5 row-start-4 col-start-10 bg-christmas-yellow">
+                  <div class="text-box-with-image hidden">
+                    <img class="size-40" src="./img/candle.svg" alt="">
                     <p class="text-9xl">21</p>
                 </div>
-                <div class="col-span-2 row-span-3 col-start-1 row-start-5 bg-christmas-green text-box-with-image">
-                    <img class="size-24" src="./img/holly-leaf.svg" alt="">
+                <div class="p-4 h-full">
+                  <img class="object-cover h-full" src="./img/auto2.jpg" />
+                </div>
+              </div>
+                <div class="col-span-2 row-span-3 col-start-1 row-start-5 bg-christmas-green">
+                  <div class="text-box-with-image hidden">
+                    <img class="size-28" src="./img/holly-leaf.svg" alt="">
                     <p class="text-9xl">3</p>
               </div>
-                <div class="col-span-4 row-span-2 col-start-4 bg-christmas-yellow text-box">
-                    <p class="text-7xl">10</p>
+              <div class="p-4 h-full">
+                <img class="object-cover h-full" src="./img/kamin.jpg" />
               </div>
-                <div class="col-span-2 row-span-2 bg-christmas-red text-box">
+            </div>
+                <div class="col-span-4 row-span-2 col-start-4 bg-christmas-yellow">
+                  <div class="text-box hidden bg-christmas-yellow-stars2">
+                    <p class="text-7xl">10</p>
+                  </div>
+                  <div class="p-4">
+                    <p class="text-3xl">Kerzenschein und Räucherduft, Weihnachten liegt in der Luft.</p>
+                  </div>
+            </div>
+                <div class="col-span-2 row-span-2 bg-christmas-red">
+                  <div class="text-box hidden">
                     <p class="text-7xl">13</p>
               </div>
-                <div class="col-span-2 row-span-2 col-start-1 bg-christmas-yellow text-box">
+              <div class="p-4">
+                <p class="text-2xl">Weihnachten ist keine Jahreszeit. Es ist ein Gefühl.</p>
+              </div>
+            </div>
+                <div class="col-span-2 row-span-2 col-start-1 bg-christmas-yellow">
+                  <div class="text-box hidden bg-christmas-yellow-stars">
                     <p class="text-8xl">12</p>
               </div>
-                <div class="col-span-2 row-span-4 col-start-3 bg-christmas-green text-box">
+              <div class="p-4">
+                <p class="text-4xl">Ein Glücksstern für kleine und große Träume.</p>
+              </div>
+            </div>
+                <div class="col-span-2 row-span-4 col-start-3 bg-christmas-green">
+                  <div class="text-box hidden">
                     <p class="text-8xl">22</p>
               </div>
-                <div class="col-span-5 row-span-4 col-start-5 bg-christmas-red text-box-with-image">
-                    <img class="size-40" src="./img/gift.svg" alt="">
+              <div class="p-4">
+                <p class="text-4xl">Nun leuchten helle Weihnachts-kerzen und zaubern Glück und Freud’ in alle Herzen.</p>
+              </div>
+            </div>
+                <div class="col-span-5 row-span-4 col-start-5 bg-christmas-red">
+                  <div class="text-box-with-image hidden">
+                    <img class="size-64" src="./img/geschenke.png" alt="">
                     <p class="text-9xl">24</p>
               </div>
-                <div class="col-span-3 row-span-1 col-start-10 row-start-9 bg-christmas-green text-box">
-                  <p class="text-8xl">9</p>
+              <div class="p-4 h-full">
+                <img class="object-cover h-full" src="./img/weihnachtsmann2.jpg" />
               </div>
-                <div class="col-span-2 row-span-7 col-start-1 bg-christmas-red text-box-with-image">
-                    <img class="size-20" src="./img/snowflake-red.svg" alt="">
-                   <p class="text-9xl">14</p>
+            </div>
+                <div class="col-span-3 row-span-1 col-start-10 row-start-9 bg-christmas-green">
+                  <div class="text-box hidden">
+                    <p class="text-7xl">9</p>
               </div>
-                <div class="col-span-1 row-span-5 col-start-3 bg-christmas-yellow text-box">
-                   <p class="text-8xl">5</p>
+              <div class="p-4">
+                <p class="text-2xl">Was ist ein Keks unterm Baum? Ein schattiges Plätzchen!</p>
               </div>
-                <div class="col-span-1 row-span-5 bg-christmas-red text-box">
-                   <p class="text-8xl">8</p>
+            </div>
+                <div class="col-span-2 row-span-7 col-start-1 bg-christmas-red">
+                  <div class="text-box-with-image hidden">
+                    <img class="size-24" src="./img/snowflake-red.svg" alt="">
+                    <p class="text-9xl">14</p>
               </div>
-                <div class="col-span-3 row-span-5 bg-christmas-green text-box">
-                  <p class="text-8xl">16</p>
+              <div class="p-4 h-full">
+                <img class="object-cover h-full" src="./img/baum2.jpg" />
               </div>
-                <div class="col-span-2 row-span-5 bg-christmas-yellow text-box-with-image">
+            </div>
+                <div class="col-span-2 row-span-5 col-start-3 bg-christmas-yellow">
+                  <div class="text-box hidden">
+                    <p class="text-8xl">5</p>
+              </div>
+              <div class="p-4">
+                <p class="text-xl">Wenn im hellen Glanz erstrahlen die Kerzen am Weihnachtsbaum wünsche ich Dir mit diesen Zeilen einen schönen Weihnachtstraum.</p>
+              </div>
+            </div>
+                <div class="col-span-1 row-span-5 col-start-5 bg-christmas-red">
+                  <div class="text-box hidden">
+                    <p class="text-8xl">8</p>
+              </div>
+              <div class="p-4 h-full">
+                <img class="object-cover h-full" src="./img/weihnachten.jpg" />
+              </div>
+            </div>
+                <div class="col-span-2 row-span-5 col-start-6 bg-christmas-green">
+                  <div class="text-box-with-image hidden">
+                    <img class="size-28" src="./img/christmas-sled-sleigh.svg" alt="">
+                    <p class="text-8xl">16</p>
+              </div>
+              <div class="p-4 h-full">
+                <img class="object-cover h-full" src="./img/zug.jpg" />
+              </div>
+            </div>
+                <div class="col-span-2 row-span-5 bg-christmas-yellow">
+                  <div class="text-box-with-image hidden">
                     <img class="size-20" src="./img/snowflake.svg" alt="">
-                  <p class="text-8xl">2</p>
+                    <p class="text-8xl">2</p>
               </div>
-                <div class="col-span-2 row-span-7 row-start-10 col-start-10 bg-christmas-red text-box">
-                  <p class="text-9xl">20</p>
+              <div class="p-4">
+                <p class="text-xl">Vom Tage bleibt nicht mehr viel Zeit, besser ist es, wenn es schneit, da könnt ihr rodeln, tollen, Schneemann bauen, ohne finster dreizuschauen.</p>
               </div>
-                <div class="col-span-1 row-span-3 row-start-10 col-start-12 bg-christmas-yellow text-box">
-                  <p class="text-7xl">7</p>
+            </div>
+                <div class="col-span-2 row-span-7 row-start-10 col-start-10 bg-christmas-red">
+                  <div class="text-box hidden bg.christmas.red.bg-christmas-red-stars">
+                    <p class="text-9xl">20</p>
               </div>
-                <div class="col-span-1 row-span-4 col-start-12 row-start-15 bg-christmas-green text-box">
-                  <p class="text-7xl">19</p>
+              <div class="p-4">
+                <p class="text-4xl">Weihnachten ist, wenn die besten Geschenke am Tisch sitzen und nicht unterm Baum liegen.</p>
               </div>
+            </div> 
+                <div class="col-span-1 row-span-3 row-start-10 col-start-12 bg-christmas-yellow">
+                  <div class="text-box hidden">
+                    <p class="text-7xl">7</p>
+              </div>
+              <div class="p-4">
+                <p class="text-2xl">Weih-nachten ist die große Zeit des Zuviel.</p>
+              </div>
+            </div> 
+                <div class="col-span-1 row-span-4 col-start-12 row-start-15 bg-christmas-green">
+                  <div class="text-box hidden">
+                    <p class="text-7xl">19</p>
+              </div>
+              <div class="p-4 h-full">
+                <img class="object-cover h-full" src="./img/zug2.1.jpg" />
+              </div>
+            </div>
             </div>
         </div>
     </main>
