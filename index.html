@@ -6,11 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      .text-box {
+      @font-face {
+        font-family: 'PlayfairDisplay'; /* Gewünschter Name */
+        src: url('./fonts/PlayfairDisplay-Medium.ttf');
+      }
+
+      .text-box, .text-box-with-image {
         display: flex;
-        justify-content: end;
         flex-wrap: wrap;
         align-content: end;
+        padding: 1rem;
+      }
+      .text-box {
+        justify-content: end;
+      }
+      .text-box-with-image {
+        justify-content: space-between;
       }
       .bg-christmas-green {
         background-color: #3D4D31;
@@ -24,11 +35,18 @@
         background-color: #722525;
         color: #A15959;
       }
+      .bg-christmas-grey {
+        background-color: #D4CDC8;
+        color: #000;
+      }
+      body {
+        font-family: "PlayfairDisplay", sans-serif;
+      }
     </style>
 </head>
 </div>
-<body>
-    <header class="bg-white">
+<body class="bg-christmas-grey">
+    <header>
         <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div class="flex lg:flex-1">
             <a href="#" class="-m-1.5 p-1.5">
@@ -81,77 +99,83 @@
     <main>
         <div class="mx-auto h-screen w-screen">
             <div class="grid grid-cols-12 grid-rows-16 gap-4 h-full text-right">
-                <div class="col-span-2 row-span-2 col-start-1 row-start-1 bg-christmas-red text-box">
-                    <p class="text-9xl font-sans">18</p>
+                <div class="col-span-3 row-span-3 col-start-1 row-start-1 bg-christmas-red text-box">
+                    <p class="text-9xl">18</p>
                 </div>
-                <div class="col-span-2 row-span-3 row-start-1 bg-christmas-yellow text-box">
-                    <p class="text-9xl font-sans">23</p>
+                <div class="col-span-2 row-span-4 col-start-4 row-start-1 bg-christmas-yellow text-box">
+                    <p class="text-9xl">23</p>
                 </div>
-                <div class="col-span-5 row-span-2 row-start-1 bg-christmas-red text-box">
-                    <p class="text-9xl font-sans">1</p>
+                <div class="col-span-4 row-span-2 col-start-6 row-start-1 bg-christmas-red text-box">
+                    <p class="text-9xl">1</p>
               </div>
-                <div class="col-span-3 row-span-2 bg-christmas-green text-box">
-                    <p class="text-9xl font-sans">11</p>
+                <div class="col-span-3 row-span-3 col-start-10 bg-christmas-green text-box">
+                    <p class="text-9xl">11</p>
               </div>
-                <div class="col-span-1 row-span-2 col-start-1 row-start-3 bg-christmas-yellow text-box">
-                    <p class="text-7xl font-sans">15</p>
+                <div class="col-span-2 row-span-1 col-start-1 row-start-4 bg-christmas-yellow text-box">
+                    <p class="text-7xl">15</p>
               </div>
-                <div class="col-span-1 row-span-5 col-start-2 bg-christmas-green text-box">
-                    <p class="text-6xl font-sans">17</p>
+                <div class="col-span-1 row-span-4 col-start-3 row-start-4 bg-christmas-green text-box">
+                    <p class="text-8xl">17</p>
               </div>
-                <div class="col-span-2 row-span-2 col-start-3 bg-christmas-red text-box">
-                    <p class="text-6xl font-sans">14</p>
+                <div class="col-span-2 row-span-1 col-start-4 bg-christmas-red text-box">
+                    <p class="text-7xl">4</p>
               </div>
-                <div class="col-span-5 row-span-3 col-start-5 row-start-3 bg-christmas-green text-box">
-                    <p class="text-9xl font-sans">6</p>
+                <div class="col-span-4 row-span-3 col-start-6 row-start-3 bg-christmas-green text-box-with-image">
+                    <img class="size-36" src="./img/christmas-tree2.svg" alt="">
+                    <p class="text-9xl">6</p>
               </div>
-                <div class="col-span-3 row-span-5 row-start-3 col-start-10 bg-christmas-yellow text-box">
-                    <p class="text-9xl font-sans">21</p>
+                <div class="col-span-3 row-span-5 row-start-4 col-start-10 bg-christmas-yellow text-box-with-image">
+                    <img class="size-36" src="./img/candle.svg" alt="">
+                    <p class="text-9xl">21</p>
                 </div>
-                <div class="col-span-1 row-span-3 col-start-1 row-start-5 bg-christmas-green text-box">
-                    <p class="text-7xl font-sans">3</p>
+                <div class="col-span-2 row-span-3 col-start-1 row-start-5 bg-christmas-green text-box-with-image">
+                    <img class="size-24" src="./img/holly-leaf.svg" alt="">
+                    <p class="text-9xl">3</p>
               </div>
-                <div class="col-span-5 row-span-2 col-start-3 bg-christmas-yellow text-box">
-                    <p class="text-7xl font-sans">10</p>
+                <div class="col-span-4 row-span-2 col-start-4 bg-christmas-yellow text-box">
+                    <p class="text-7xl">10</p>
               </div>
                 <div class="col-span-2 row-span-2 bg-christmas-red text-box">
-                    <p class="text-7xl font-sans">13</p>
+                    <p class="text-7xl">13</p>
               </div>
-                <div class="col-span-1 row-span-2 col-start-1 bg-christmas-yellow text-box">
-                    <p class="text-5xl font-sans">12</p>
+                <div class="col-span-2 row-span-2 col-start-1 bg-christmas-yellow text-box">
+                    <p class="text-8xl">12</p>
               </div>
-                <div class="col-span-2 row-span-3 bg-christmas-green text-box">
-                    <p class="text-8xl font-sans">22</p>
+                <div class="col-span-2 row-span-4 col-start-3 bg-christmas-green text-box">
+                    <p class="text-8xl">22</p>
               </div>
-                <div class="col-span-6 row-span-3 bg-christmas-red text-box">
-                  <p class="text-9xl font-sans">24</p>
+                <div class="col-span-5 row-span-4 col-start-5 bg-christmas-red text-box-with-image">
+                    <img class="size-40" src="./img/gift.svg" alt="">
+                    <p class="text-9xl">24</p>
               </div>
-                <div class="col-span-3 row-span-2 col-start-10 row-start-8 bg-christmas-green text-box">
-                  <p class="text-9xl font-sans">9</p>
+                <div class="col-span-3 row-span-1 col-start-10 row-start-9 bg-christmas-green text-box">
+                  <p class="text-8xl">9</p>
               </div>
-                <div class="col-span-1 row-span-7 col-start-1 bg-christmas-red text-box">
-                  <p class="text-7xl font-sans">14</p>
+                <div class="col-span-2 row-span-7 col-start-1 bg-christmas-red text-box-with-image">
+                    <img class="size-20" src="./img/snowflake-red.svg" alt="">
+                   <p class="text-9xl">14</p>
               </div>
-                <div class="col-span-2 row-span-6 col-start-2 bg-christmas-yellow text-box">
-                  <p class="text-7xl font-sans">5</p>
+                <div class="col-span-1 row-span-5 col-start-3 bg-christmas-yellow text-box">
+                   <p class="text-8xl">5</p>
               </div>
-                <div class="col-span-2 row-span-6 bg-christmas-red text-box">
-                  <p class="text-7xl font-sans">8</p>
+                <div class="col-span-1 row-span-5 bg-christmas-red text-box">
+                   <p class="text-8xl">8</p>
               </div>
-                <div class="col-span-2 row-span-6 bg-christmas-green text-box">
-                  <p class="text-7xl font-sans">16</p>
+                <div class="col-span-3 row-span-5 bg-christmas-green text-box">
+                  <p class="text-8xl">16</p>
               </div>
-                <div class="col-span-2 row-span-6 bg-christmas-yellow text-box">
-                  <p class="text-7xl font-sans">2</p>
+                <div class="col-span-2 row-span-5 bg-christmas-yellow text-box-with-image">
+                    <img class="size-20" src="./img/snowflake.svg" alt="">
+                  <p class="text-8xl">2</p>
               </div>
                 <div class="col-span-2 row-span-7 row-start-10 col-start-10 bg-christmas-red text-box">
-                  <p class="text-8xl font-sans">20</p>
+                  <p class="text-9xl">20</p>
               </div>
                 <div class="col-span-1 row-span-3 row-start-10 col-start-12 bg-christmas-yellow text-box">
-                  <p class="text-7xl font-sans">7</p>
+                  <p class="text-7xl">7</p>
               </div>
                 <div class="col-span-1 row-span-4 col-start-12 row-start-15 bg-christmas-green text-box">
-                  <p class="text-6xl font-sans">19</p>
+                  <p class="text-7xl">19</p>
               </div>
             </div>
         </div>
