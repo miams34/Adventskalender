@@ -5,62 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      @font-face {
-        font-family: 'PlayfairDisplay'; /* Gewünschter Name */
-        src: url('./fonts/PlayfairDisplay-Medium.ttf');
-      }
-
-      .text-box, .text-box-with-image {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: end;
-        padding: 1rem;
-      }
-      .text-box {
-        justify-content: end;
-      }
-      .text-box-with-image {
-        justify-content: space-between;
-      }
-      .bg-christmas-green, .bg-christmas-green-stars {
-        background-color: #3D4D31;
-        color: #ffffff;
-      }
-      .bg-christmas-green-stars {
-        background-image: url('./img/grünesterne.png');
-      }
-      
-      .bg-christmas-yellow, .bg-christmas-yellow-stars, .bg-christmas-yellow-stars2 {
-        background-color: #C8AB7C;
-        color: #47320f;
-      }
-
-      .bg-christmas-yellow-stars {
-        background-image: url('./img/gelbesterne.png');
-      }
-
-      .bg-christmas-yellow-stars2 {
-        background-image: url('./img/gelbesterne2.png');
-      }
-
-      .bg-christmas-red, .bg-christmas-red-stars {
-        background-color: #722525;
-        color: #ffffff;
-      }
-      
-      .bg-christmas-red-stars {
-        background-image: url('./img/rotesterne.png');
-      }
-
-      .bg-christmas-grey {
-        background-color: #D4CDC8;
-        color: #000;
-      }
-      body {
-        font-family: "PlayfairDisplay", sans-serif;
-      }
-    </style>
+    <link rel="stylesheet" href="./assets/styles.css" type="text/css" />
+    <script src="./open-calender-days.js"></script>
 </head>
 </div>
 <body class="bg-christmas-grey">
@@ -69,7 +15,7 @@
           <div class="flex lg:flex-1">
             <a href="#" class="-m-1.5 p-1.5">
               <span class="sr-only">Adventskalender</span>
-              <img class="h-8 w-auto" src="./img/santa.svg" alt="">
+              <img class="h-8 w-auto" src="./assets/icons/santa.svg" alt="">
             </a>
           </div>
           <div class="hidden lg:flex lg:gap-x-12">
@@ -87,7 +33,7 @@
             <div class="flex items-center justify-between">
               <a href="#" class="-m-1.5 p-1.5">
                 <span class="sr-only">Adventskalender</span>
-                <img class="h-8 w-auto" src="./img/santa.svg" alt="">
+                <img class="h-8 w-auto" src="./assets/icons/santa.svg" alt="">
               </a>
             </div>
             <div class="mt-6 flow-root">
@@ -103,209 +49,216 @@
     <main>
         <div class="h-screen w-screen m-4">
             <div class="grid grid-cols-12 grid-rows-16 gap-4 h-full text-right">
-                <div class="md:col-span-3 md:row-span-3 col-span-4 row-span-2 col-start-1 row-start-1 bg-christmas-red">
-                  <div class="text-box-with-image">
-                    <img class="size-12 md:size-28" src="./img/zuckerstange.png" alt="">
+                <div class="md:col-span-3 md:row-span-3 col-span-4 row-span-2 col-start-1 row-start-1 bg-christmas-red calender-door" data-day-number="18">
+                  <div class="text-box-with-image calender-number">
+                    <img class="size-12 md:size-28" src="./assets/img/zuckerstange.png" alt="">
                     <p class="text-5xl md:text-9xl">18</p>
                   </div>
-                  <div class="p-4 h-full hidden">
-                    <img class="object-cover h-full" src="./img/schneemann.jpg" />
+                  <div class="p-4 h-full hidden calender-content">
+                    <img class="object-cover h-full" src="./assets/img/schneemann.jpg" />
                   </div>
                 </div>
-                <div class="md:col-span-2 col-span-4 row-span-4 md:row-span-3 md:col-start-4 col-start-5 row-start-1 bg-christmas-yellow">
-                  <div class="text-box">
-                    <img class="size-68" src="./img/schnee.png" alt="">
+                <div class="md:col-span-2 col-span-4 row-span-4 md:row-span-3 md:col-start-4 col-start-5 row-start-1 bg-christmas-yellow calender-door" data-day-number="23">
+                  <div class="text-box calender-number">
+                    <img class="size-68" src="./assets/img/schnee.png" alt="">
                     <p class="text-6xl md:text-9xl">23</p>
                 </div>
-                <div class="p-4 hidden">
+                <div class="p-4 hidden calender-content">
                   <p class="text-3xl text-center text-box align-middle">Mit einem Mal sieht alles fröhlich aus, es leuchtet hell im ganzen Haus. Die Fenster, sie sind bunt geschmückt, Weihnachten das Herz entzückt.</p>
                 </div>
               </div>
-                <div class="col-span-4 md:row-span-1 row-span-2 md:col-start-6 col-start-9 md:row-start-1 row-start-1 bg-christmas-red">
-                  <div class="text-box">
+                <div class="col-span-4 md:row-span-1 row-span-2 md:col-start-6 col-start-9 md:row-start-1 row-start-1 bg-christmas-red calender-door" data-day-number="1">
+                  <div class="text-box calender-number">
                     <p class="text-5xl md:text-9xl">1</p>
               </div>
-              <div class="p-4 hidden">
-                <p class="text-2xl text-center text-box align-middle">Die Botschaft von Weihnachten: Es gibt keine größere Kraft als die Liebe. Sie überwindet den Hass wie das Licht die Finsternis.</p>
+              <div class="p-4 hidden calender-content calender-content">
+                <p class="text-xl text-center text-box align-middle">Die Botschaft von Weihnachten: Es gibt keine größere Kraft als die Liebe. Sie überwindet den Hass wie das Licht die Finsternis.</p>
               </div>
             </div>
-                <div class="md:col-span-3 col-span-4 md:row-span-3 row-span-2 md:col-start-10 col-start-9 md:row-start-1 row-start-3 bg-christmas-green">
-                  <div class="text-box-with-image bg-christmas-green-stars h-full bg-cover">
+                <div class="md:col-span-3 col-span-4 md:row-span-3 row-span-2 md:col-start-10 col-start-9 md:row-start-1 row-start-3 bg-christmas-green calender-door" data-day-number="11">
+                  <div class="text-box-with-image bg-christmas-green-stars h-full bg-cover calender-number">
                     <p class="text-5xl md:text-9xl">11</p>
                   </div>
-              <div class="p-4 h-full hidden">
-                <img class="object-cover h-full" src="./img/kutsche.jpg" />
+              <div class="p-4 h-full hidden calender-content">
+                <img class="object-cover h-full" src="./assets/img/kutsche.jpg" />
               </div>
             </div>
-                <div class="md:col-span-2 col-span-4 md:row-span-1 row-span-1 col-start-1 md:row-start-4 row-start-3 bg-christmas-yellow">
-                  <div class="text-box-with-image">
+                <div class="md:col-span-2 col-span-4 md:row-span-1 row-span-1 col-start-1 md:row-start-4 row-start-3 bg-christmas-yellow calender-door" data-day-number="15">
+                  <div class="text-box-with-image calender-number">
                     <p class="text-4xl md:text-7xl">15</p>
               </div>
-              <div class="p-4 h-full hidden">
-                <img class="object-cover h-full" src="./img/bänke.jpg" />
+              <div class="p-4 h-full hidden calender-content">
+                <img class="object-cover h-full" src="./assets/img/bänke.jpg" />
               </div>
             </div>
-                <div class="md:col-span-1 col-span-4 md:row-span-2 row-span-5 md:col-start-3 col-start-1 md:row-start-4 row-start-4 bg-christmas-green">
-                  <div class="text-box-with-image">
+                <div class="md:col-span-1 col-span-4 md:row-span-2 row-span-5 md:col-start-3 col-start-1 md:row-start-4 row-start-4 bg-christmas-green calender-door"  data-day-number="17">
+                  <div class="text-box-with-image calender-number">
                     <p class="text-5xl md:text-8xl">17</p>
               </div>
-              <div class="p-4 h-full hidden">
-                <img class="object-cover h-full" src="./img/schneemann2.1.jpg" />
+              <div class="p-4 h-full hidden calender-content">
+                <img class="object-cover h-full" src="./assets/img/schneemann2.1.jpg" />
               </div>
             </div>
-                <div class="md:col-span-2 col-span-4 md:row-span-1 row-span-1 md:col-start-4 col-start-4 md:row-start-4 bg-christmas-red">
-                  <div class="text-box">
+                <div class="md:col-span-2 col-span-4 md:row-span-1 row-span-1 md:col-start-4 col-start-4 md:row-start-4 bg-christmas-red calender-door" data-day-number="4">
+                  <div class="text-box calender-number">
                     <p class="text-5xl md:text-7xl">4</p>
               </div>
-              <div class="p-4 hidden">
-                <p class="text-xl text-center text-box align-middle">Das größte Weihnachtsgeschenk ist, wenn wir erkennen dürfen, mit wie vielen Dingen wir bereits gesegnet sind.</p>
+              <div class="p-4 hidden calender-content">
+                <p class="text-m text-center text-box align-middle">Das größte Weihnachtsgeschenk ist, wenn wir erkennen dürfen, mit wie vielen Dingen wir bereits gesegnet sind.</p>
               </div>
             </div>
-                <div class="md:col-span-4 col-span-8 md:row-span-3 row-span-4 md:col-start-6 col-start-5 md:row-start-2 row-start-5 bg-christmas-green">
-                  <div class="text-box-with-image">
-                    <img class="size-20 md:size-56" src="./img/bäume.png" alt="">
+                <div class="md:col-span-4 col-span-8 md:row-span-3 row-span-4 md:col-start-6 col-start-5 md:row-start-2 row-start-5 bg-christmas-green calender-door" data-day-number="6">
+                  <div class="text-box-with-image calender-number">
+                    <img class="size-20 md:size-60" src="./assets/img/bäume.png" alt="">
                     <p class="text-7xl md:text-9xl">6</p>
               </div>
-              <div class="p-4 h-full hidden">
-                <img class="object-cover h-full" src="./img/pferde2.jpg" />
+              <div class="p-4 h-full hidden calender-content">
+                <img class="object-cover h-full w-full" src="./assets/img/pferde2.jpg" />
               </div>
             </div>
-                <div class="md:col-span-3 col-span-5 md:row-span-4 row-span-1 md:col-start-10 col-start-8 md:row-start-4 row-start-9 bg-christmas-yellow">
-                  <div class="text-box-with-image">
-                    <img class="size-12 md:size-40" src="./img/candle.svg" alt="">
+                <div class="md:col-span-3 col-span-5 md:row-span-4 row-span-1 md:col-start-10 col-start-8 md:row-start-4 row-start-9 bg-christmas-yellow calender-door" data-day-number="21">
+                  <div class="text-box-with-image calender-number">
+                    <img class="size-12 md:size-40" src="./assets/icons/candle.svg" alt="">
                     <p class="text-5xl md:text-9xl">21</p>
                 </div>
-                <div class="p-4 h-full hidden">
-                  <img class="object-cover h-full" src="./img/auto2.jpg" />
+                <div class="p-4 h-full hidden calender-content">
+                  <img class="object-cover h-full" src="./assets/img/auto2.jpg" />
                 </div>
               </div>
-                <div class="md:col-span-2 col-span-3 md:row-span-1 row-span-5 col-start-1 md:row-start-5 row-start-9 bg-christmas-green">
-                  <div class="text-box-with-image">
-                    <img class="size-12 md:size-28" src="./img/holly-leaf.svg" alt="">
+                <div class="md:col-span-2 col-span-3 md:row-span-1 row-span-5 col-start-1 md:row-start-5 row-start-9 bg-christmas-green calender-door" data-day-number="3">
+                  <div class="text-box-with-image calender-number">
+                    <img class="size-12 md:size-28" src="./assets/icons/holly-leaf.svg" alt="">
                     <p class="text-5xl md:text-9xl">3</p>
               </div>
-              <div class="p-4 h-full hidden">
-                <img class="object-cover h-full" src="./img/kamin.jpg" />
+              <div class="p-4 h-full hidden calender-content">
+                <img class="object-cover h-full" src="./assets/img/kamin.jpg" />
               </div>
             </div>
-                <div class="md:col-span-4 col-span-3 md:row-span-1 row-span-4 md:col-start-4 col-start-4 row-start-10 bg-christmas-yellow">
-                  <div class="text-box bg-christmas-yellow-stars2 bg-cover md:bg-contain h-full">
+                <div class="md:col-span-4 col-span-3 md:row-span-1 row-span-4 md:col-start-4 col-start-4 row-start-10 bg-christmas-yellow calender-door" data-day-number="10">
+                  <div class="text-box bg-christmas-yellow-stars2 bg-cover md:bg-contain h-full calender-number">
                     <p class="text-6xl md:text-7xl">10</p>
                   </div>
-                  <div class="p-4 h-full content-center hidden">
-                    <p class="text-4xl text-center text-box">Kerzenschein und Räucherduft, Weihnachten liegt in der Luft.</p>
+                  <div class="p-4 h-full content-center hidden calender-content">
+                    <p class="text-2xl text-center text-box">Kerzenschein und Räucherduft, Weihnachten liegt in der Luft.</p>
                   </div>
             </div>
-                <div class="md:col-span-2 col-span-4 md:row-span-1 row-span-4 col-start-7 row-start-10 bg-christmas-red">
-                  <div class="text-box">
+                <div class="md:col-span-2 col-span-4 md:row-span-1 row-span-4 col-start-7 row-start-10 bg-christmas-red calender-door" data-day-number="13">
+                  <div class="text-box calender-number">
                     <p class="text-6xl md:text-7xl">13</p>
               </div>
-              <div class="p-4 hidden">
+              <div class="p-4 hidden calender-content">
                 <p class="text-3xl text-center text-box align-middle">Weihnachten ist keine Jahreszeit. Es ist ein Gefühl.</p>
               </div>
             </div>
-                <div class="col-span-2 md:row-span-2 row-span-4 col-start-1 bg-christmas-yellow">
-                  <div class="text-box bg-christmas-yellow-stars h-full bg-cover md:bg-contain">
+                <div class="col-span-2 md:row-span-2 row-span-4 col-start-1 bg-christmas-yellow calender-door" data-day-number="12">
+                  <div class="text-box bg-christmas-yellow-stars h-full bg-cover md:bg-contain calender-number">
                     <p class="text-4xl md:text-8xl">12</p>
               </div>
-              <div class="p-4 hidden">
+              <div class="p-4 hidden calender-content">
                 <p class="text-3xl text-center text-box align-middle">Ein Glücksstern für kleine und große Träume.</p>
               </div>
             </div>
-                <div class="col-span-2 md:row-span-5 row-span-4 col-start-3 md:row-start-6 row-start-14 bg-christmas-green">
-                  <div class="text-box">
+                <div class="col-span-2 md:row-span-5 row-span-4 col-start-3 md:row-start-6 row-start-14 bg-christmas-green calender-door" data-day-number="22">
+                  <div class="text-box calender-number">
                     <p class="text-4xl md:text-8xl">22</p>
               </div>
-              <div class="p-4 h-full content-center hidden">
+              <div class="p-4 h-full content-center hidden calender-content">
                 <p class="text-4xl text-center text-box">Nun leuchten helle Weihnachts-kerzen und zaubern Glück und Freud’ in alle Herzen.</p>
               </div>
             </div>
-                <div class="md:col-span-5 col-span-8 md:row-span-5 row-span-4 col-start-5 md:row-start-6 row-start-14 bg-christmas-red">
-                  <div class="text-box-with-image">
-                    <img class="size-28 md:size-64" src="./img/geschenke.png" alt="">
+                <div class="md:col-span-5 col-span-8 md:row-span-5 row-span-4 col-start-5 md:row-start-6 row-start-14 bg-christmas-red calender-door" data-day-number="24">
+                  <div class="text-box-with-image calender-number">
+                    <img class="size-28 md:size-64" src="./assets/img/geschenke.png" alt="">
                     <p class="text-7xl md:text-9xl">24</p>
               </div>
-              <div class="p-4 h-full hidden">
-                <img class="object-cover h-full" src="./img/weihnachtsmann2.jpg" />
+              <div class="p-4 h-full hidden calender-content">
+                <img class="object-cover h-full" src="./assets/img/weihnachtsmann2.jpg" />
               </div>
             </div>
-                <div class="md:col-span-3 col-span-2 row-span-4 md:row-span-2 col-start-11 md:row-start-8 row-start-10 bg-christmas-green">
-                  <div class="text-box">
+                <div class="md:col-span-3 col-span-2 row-span-4 md:row-span-2 col-start-11 md:row-start-8 row-start-10 bg-christmas-green calender-door" data-day-number="9">
+                  <div class="text-box calender-number">
                     <p class="text-6xl md:text-7xl">9</p>
               </div>
-              <div class="p-4 hidden">
-                <p class="text-3xl text-center text-box align-middle">Was ist ein Keks unterm Baum? Ein schattiges Plätzchen!</p>
+              <div class="p-4 hidden calender-content">
+                <p class="text-xl text-center text-box align-middle">Was ist ein Keks unterm Baum? Ein schattiges Plätzchen!</p>
               </div>
             </div>
-                <div class="md:col-span-2 col-span-3 md:row-span-6 row-span-3 col-start-1 row-start-16 bg-christmas-red">
-                  <div class="text-box-with-image">
-                    <img class="size-10 md:size-24" src="./img/snowflake-red.svg" alt="">
+                <div class="md:col-span-2 col-span-3 md:row-span-6 row-span-3 col-start-1 row-start-16 bg-christmas-red calender-door" data-day-number="14">
+                  <div class="text-box-with-image calender-number">
+                    <img class="size-10 md:size-24" src="./assets/icons/snowflake-red.svg" alt="">
                     <p class="text-5xl md:text-9xl">14</p>
               </div>
-              <div class="p-4 h-full hidden">
-                <img class="object-cover h-full" src="./img/baum2.jpg" />
+              <div class="p-4 h-full hidden calender-content">
+                <img class="object-cover h-full" src="./assets/img/baum2.jpg" />
               </div>
             </div>
-                <div class="md:col-span-2 col-span-6 md:row-span-3 row-span-3 col-start-4 row-start-14 bg-christmas-yellow">
-                  <div class="text-box">
+                <div class="md:col-span-2 col-span-6 md:row-span-3 row-span-3 col-start-4 row-start-14 bg-christmas-yellow calender-door" data-day-number="5">
+                  <div class="text-box calender-number">
                     <p class="text-7xl md:text-8xl">5</p>
               </div>
-              <div class="p-4 hidden">
-                <p class="text-xl text-center text-box align-middle">Wenn im hellen Glanz erstrahlen die Kerzen am Weihnachtsbaum wünsche ich Dir mit diesen Zeilen einen schönen Weihnachtstraum.</p>
+              <div class="p-4 hidden calender-content">
+                <p class="text-s text-center text-box align-middle">Wenn im hellen Glanz erstrahlen die Kerzen am Weihnachtsbaum wünsche ich Dir mit diesen Zeilen einen schönen Weihnachtstraum.</p>
               </div>
             </div>
-                <div class="md:col-span-1 col-span-3 md:row-span-3 row-span-5 md:col-start-5 col-start-10 row-start-14 bg-christmas-red">
-                  <div class="text-box">
+                <div class="md:col-span-1 col-span-3 md:row-span-3 row-span-5 md:col-start-5 col-start-10 row-start-14 bg-christmas-red calender-door" data-day-number="8">
+                  <div class="text-box calender-number">
                     <p class="text-6xl md:text-8xl">8</p>
               </div>
-              <div class="p-4 h-full hidden">
-                <img class="object-cover h-full" src="./img/weihnachten.jpg" />
+              <div class="p-4 h-full hidden calender-content">
+                <img class="object-cover h-full" src="./assets/img/weihnachten.jpg" />
               </div>
             </div>
-                <div class="md:col-span-2 col-span-4 md:row-span-3 row-span-2 md:col-start-6 col-start-1 row-start-16 bg-christmas-green">
-                  <div class="text-box-with-image">
-                    <img class="size-12 md:size-28" src="./img/christmas-sled-sleigh.svg" alt="">
+                <div class="md:col-span-2 col-span-4 md:row-span-3 row-span-2 md:col-start-6 col-start-1 row-start-16 bg-christmas-green calender-door" data-day-number="16">
+                  <div class="text-box-with-image calender-number">
+                    <img class="size-12 md:size-28" src="./assets/icons/christmas-sled-sleigh.svg" alt="">
                     <p class="text-5xl md:text-8xl">16</p>
               </div>
-              <div class="p-4 h-full hidden">
-                <img class="object-cover h-full" src="./img/zug.jpg" />
+              <div class="p-4 h-full hidden calender-content">
+                <img class="object-cover h-full" src="./assets/img/zug.jpg" />
               </div>
             </div>
-                <div class="md:col-span-2 col-span-5 md:row-span-3 row-span-2 col-start-5 row-start-16 bg-christmas-yellow">
-                  <div class="text-box-with-image">
-                    <img class="size-10 md:size-20" src="./img/snowflake.svg" alt="">
+                <div class="md:col-span-2 col-span-5 md:row-span-3 row-span-2 col-start-5 row-start-16 bg-christmas-yellow calender-door" data-day-number="2">
+                  <div class="text-box-with-image calender-number">
+                    <img class="size-10 md:size-20" src="./assets/icons/snowflake.svg" alt="">
                     <p class="text-5xl md:text-8xl">2</p>
               </div>
-              <div class="p-4 hidden">
-                <p class="text-xl text-center text-box align-middle">Vom Tage bleibt nicht mehr viel Zeit, besser ist es, wenn es schneit, da könnt ihr rodeln, tollen, Schneemann bauen, ohne finster dreizuschauen.</p>
+              <div class="p-4 hidden calender-content">
+                <p class="text-s text-center text-box align-middle">Vom Tage bleibt nicht mehr viel Zeit, besser ist es, wenn es schneit, da könnt ihr rodeln, tollen, Schneemann bauen, ohne finster dreizuschauen.</p>
               </div>
             </div>
-                <div class="col-span-6 md:col-span-2 md:row-span-4 row-span-2 md:col-start-10 col-start-1 md:row-start-10 row-start-17 bg-christmas-red">
-                  <div class="text-box bg-christmas-red-stars bg-cover md:bg-contain h-full">
+                <div class="col-span-6 md:col-span-2 md:row-span-4 row-span-2 md:col-start-10 col-start-1 md:row-start-10 row-start-17 bg-christmas-red calender-door" data-day-number="20">
+                  <div class="text-box bg-christmas-red-stars bg-cover md:bg-contain h-full calender-number">
                     <p class="text-4xl md:text-9xl">20</p>
             </div>
-              <div class="p-4 hidden">
+              <div class="p-4 hidden calender-content">
                 <p class="text-4xl text-center text-box align-middle">Weihnachten ist, wenn die besten Geschenke am Tisch sitzen und nicht unterm Baum liegen.</p>
               </div>
             </div> 
-                <div class="md:col-span-1 col-span-4 md:row-span-2 row-span-2 md:col-start-12 col-start-7 md:row-start-10 row-start-15 bg-christmas-yellow">
-                  <div class="text-box">
+                <div class="md:col-span-1 col-span-4 md:row-span-2 row-span-2 md:col-start-12 col-start-7 md:row-start-10 row-start-15 bg-christmas-yellow calender-door" data-day-number="7">
+                  <div class="text-box calender-number">
                     <p class="text-4xl md:text-7xl">7</p>
             </div>
-              <div class="p-4 hidden">
-                <p class="text-2xl text-center text-box align-middle">Weih-nachten ist die große Zeit des Zuviel.</p>
+              <div class="p-4 hidden calender-content">
+                <p class="text-m text-center text-box align-middle">Weih-nachten ist die große Zeit des Zuviel.</p>
               </div>
             </div> 
-                <div class="md:col-span-1 col-span-2 md:row-span-2 row-span-2 md:col-start-12 col-start-11 md:row-start-14 row-start-18 bg-christmas-green">
-                  <div class="text-box">
+                <div class="md:col-span-1 col-span-2 md:row-span-2 row-span-2 md:col-start-12 col-start-11 md:row-start-14 row-start-18 bg-christmas-green calender-door" data-day-number="19">
+                  <div class="text-box calender-number">
                     <p class="text-4xl md:text-7xl">19</p>
             </div>
-              <div class="p-4 h-full hidden">
-                <img class="object-cover h-full" src="./img/zug2.1.jpg" />
+              <div class="p-4 h-full hidden calender-content">
+                <img class="object-cover h-full" src="./assets/img/zug2.1.jpg" />
               </div>
             </div>
             </div>
         </div>
     </main>
+    <div id="popup" class="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 hidden">
+      <div class="relative bg-cover bg-center w-auto h-auto rounded-lg p-4" style="background-image: url('./assets/img/sternhintergrund.png');">
+          <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg">
+              <p class="text-black text-lg">Türchen kann nicht geöffnet werden, da die Zahl des Türchens nicht dem heutigen oder einem vorherigen Tag in diesem Monat entspricht.</p>
+          </div>
+      </div>
+  </div>
 </body>
 </html>

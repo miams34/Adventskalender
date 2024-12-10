@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'PlayfairDisplay'; 
+  src: url('./fonts/PlayfairDisplay-Medium.ttf');
+}
+
+.text-box, .text-box-with-image {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: end;
+  padding: 1rem;
+}
+
+.text-box {
+  justify-content: end;
+}
+.text-box-with-image {
+  justify-content: space-between;
+}
+.bg-christmas-green, .bg-christmas-green-stars {
+  background-color: #3D4D31;
+  color: #ffffff;
+}
+.bg-christmas-green-stars {
+  background-image: url('./img/grünesterne.png');
+}
+
+.bg-christmas-yellow, .bg-christmas-yellow-stars, .bg-christmas-yellow-stars2 {
+  background-color: #C8AB7C;
+  color: #47320f;
+}
+
+.bg-christmas-yellow-stars {
+  background-image: url('./img/gelbesterne.png');
+}
+
+.bg-christmas-yellow-stars2 {
+  background-image: url('./img/gelbesterne2.png');
+}
+
+.bg-christmas-red, .bg-christmas-red-stars {
+  background-color: #722525;
+  color: #ffffff;
+}
+
+.bg-christmas-red-stars {
+  background-image: url('./img/rotesterne.png');
+}
+
+.bg-christmas-grey {
+  background-color: #D4CDC8;
+  color: #000;
+}
+
+body {
+  font-family: "PlayfairDisplay", sans-serif;
+}
