@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 openCalenderDoor(dayNumber, todayDay, todayMonth, door);
             });
 
-            door.addEventListener('touchend', function() {
+            door.addEventListener('ontouchend', function() {
                 openCalenderDoor(dayNumber, todayDay, todayMonth, door);
             });
     });
