@@ -18,10 +18,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 openCalenderDoor(dayNumber, todayDay, todayMonth, door);
             });
 
-            door.addEventListener('ontouchend', function() {
+            door.addEventListener('touchstart', function() {
                 openCalenderDoor(dayNumber, todayDay, todayMonth, door);
             });
     });
+
+    const closeButton = document.getElementById('closeButton');
+    closeButton.addEventListener('click', function() {
+        document.getElementById('popup').classList.add('hidden');
+    })
 });
 
 function openCalenderDoor(dayNumber, todayDay, todayMonth, door) {
