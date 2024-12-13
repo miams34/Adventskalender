@@ -24,27 +24,10 @@
           <div class="hidden lg:flex lg:flex-1 lg:justify-end">
             <a href="#" class="text-sm/6 font-semibold text-gray-900"> <span aria-hidden="true">&rarr;</span></a>
           </div>
-        </nav>
-        <!-- Mobile menu, show/hide based on menu open state. -->
-        <div class="lg:hidden" role="dialog" aria-modal="true">
-          <!-- Background backdrop, show/hide based on slide-over state. -->
-          <div class="fixed inset-0 z-10"></div>
-          <div class="fixed inset-y-0 right-0 z-10 w-full px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-            <div class="flex items-center justify-between">
-              <a href="#" class="-m-1.5 p-1.5">
-                <span class="sr-only">Adventskalender</span>
-                <img class="h-8 w-auto" src="./assets/icons/santa.svg" alt="">
-              </a>
-            </div>
-            <div class="mt-6 flow-root">
-              <div class="-my-6 divide-y divide-gray-500/10">
-                <div class="space-y-2 py-6">
-                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Adventskalender</a>
-                </div>
-              </div>
-            </div>
+          <div class="lg:hidden lg:flex lg:gap-x-12">
+            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Adventskalender</a>
           </div>
-        </div>
+        </nav>
     </header>
     <main>
         <div class="p-4">
@@ -54,7 +37,7 @@
                     <img class="size-12 md:size-28" src="./assets/img/zuckerstange.png" alt="">
                     <p class="text-5xl md:text-9xl">18</p>
                   </div>
-                  <div class="p-4 h-full hidden calender-content">
+                  <div class="h-full hidden calender-content">
                     <img class="object-cover h-full" src="./assets/img/schneemann.jpg" />
                   </div>
                 </div>
@@ -63,23 +46,23 @@
                     <img class="size-68" src="./assets/img/schnee.png" alt="">
                     <p class="text-6xl md:text-9xl">23</p>
                 </div>
-                <div class="p-4 hidden calender-content">
-                  <p class="text-3xl text-center text-box align-middle">Mit einem Mal sieht alles fröhlich aus, es leuchtet hell im ganzen Haus. Die Fenster, sie sind bunt geschmückt, Weihnachten das Herz entzückt.</p>
+                <div class="calender-content hidden hyphens-auto" lang="de">
+                  <p class="text-xs md:text-3xl text-center text-box align-middle">Mit einem Mal sieht alles fröhlich aus, es leuchtet hell im ganzen Haus. Die Fenster, sie sind bunt geschmückt, Weihnachten das Herz entzückt.</p>
                 </div>
               </div>
                 <div class="col-span-4 md:row-span-1 row-span-2 md:col-start-6 col-start-9 md:row-start-1 row-start-1 bg-christmas-red calender-door" data-day-number="1">
                   <div class="text-box calender-number">
                     <p class="text-5xl md:text-9xl">1</p>
               </div>
-              <div class="p-4 hidden calender-content calender-content">
-                <p class="text-xl text-center text-box align-middle">Die Botschaft von Weihnachten: Es gibt keine größere Kraft als die Liebe. Sie überwindet den Hass wie das Licht die Finsternis.</p>
+              <div class="hidden calender-content calender-content hyphens-auto" lang="de">
+                <p class="text-xs md:text-xl text-center text-box align-middle p-1">Die Botschaft von Weihnachten: Es gibt keine größere Kraft als die Liebe. Sie überwindet den Hass wie das Licht die Finsternis.</p>
               </div>
             </div>
                 <div class="md:col-span-3 col-span-4 md:row-span-3 row-span-2 md:col-start-10 col-start-9 md:row-start-1 row-start-3 bg-christmas-green calender-door" data-day-number="11">
                   <div class="text-box-with-image bg-christmas-green-stars h-full bg-cover calender-number">
                     <p class="text-5xl md:text-9xl">11</p>
                   </div>
-              <div class="p-4 h-full hidden calender-content">
+              <div class="h-full hidden calender-content">
                 <img class="object-cover h-full" src="./assets/img/kutsche.jpg" />
               </div>
             </div>
@@ -87,7 +70,7 @@
                   <div class="text-box-with-image calender-number">
                     <p class="text-4xl md:text-7xl">15</p>
               </div>
-              <div class="p-4 h-full hidden calender-content">
+              <div class="h-full hidden calender-content">
                 <img class="object-cover h-full" src="./assets/img/bänke.jpg" />
               </div>
             </div>
@@ -95,7 +78,7 @@
                   <div class="text-box-with-image calender-number">
                     <p class="text-5xl md:text-8xl">17</p>
               </div>
-              <div class="p-4 h-full hidden calender-content">
+              <div class="h-full hidden calender-content">
                 <img class="object-cover h-full" src="./assets/img/schneemann2.1.jpg" />
               </div>
             </div>
@@ -103,8 +86,8 @@
                   <div class="text-box calender-number">
                     <p class="text-5xl md:text-7xl">4</p>
               </div>
-              <div class="p-4 hidden calender-content">
-                <p class="text-m text-center text-box align-middle">Das größte Weihnachtsgeschenk ist, wenn wir erkennen dürfen, mit wie vielen Dingen wir bereits gesegnet sind.</p>
+              <div class="hidden calender-content hyphens-auto" lang="de">
+                <p class="text-xs md:text-m text-center text-box align-middle">Das größte Weihnachtsgeschenk ist, wenn wir erkennen dürfen, mit wie vielen Dingen wir bereits gesegnet sind.</p>
               </div>
             </div>
                 <div class="md:col-span-4 col-span-8 md:row-span-3 row-span-4 md:col-start-6 col-start-5 md:row-start-2 row-start-5 bg-christmas-green calender-door" data-day-number="6">
@@ -112,7 +95,7 @@
                     <img class="size-20 md:size-60" src="./assets/img/bäume.png" alt="">
                     <p class="text-7xl md:text-9xl">6</p>
               </div>
-              <div class="p-4 h-full hidden calender-content">
+              <div class="h-full hidden calender-content">
                 <img class="object-cover h-full w-full" src="./assets/img/pferde2.jpg" />
               </div>
             </div>
@@ -121,7 +104,7 @@
                     <img class="size-12 md:size-40" src="./assets/icons/candle.svg" alt="">
                     <p class="text-5xl md:text-9xl">21</p>
                 </div>
-                <div class="p-4 h-full hidden calender-content">
+                <div class="h-full hidden calender-content">
                   <img class="object-cover h-full" src="./assets/img/auto2.jpg" />
                 </div>
               </div>
@@ -130,7 +113,7 @@
                     <img class="size-12 md:size-28" src="./assets/icons/holly-leaf.svg" alt="">
                     <p class="text-5xl md:text-9xl">3</p>
               </div>
-              <div class="p-4 h-full hidden calender-content">
+              <div class="h-full hidden calender-content">
                 <img class="object-cover h-full" src="./assets/img/kamin.jpg" />
               </div>
             </div>
@@ -138,32 +121,32 @@
                   <div class="text-box bg-christmas-yellow-stars2 bg-cover md:bg-contain h-full calender-number">
                     <p class="text-6xl md:text-7xl">10</p>
                   </div>
-                  <div class="p-4 h-full content-center hidden calender-content">
-                    <p class="text-2xl text-center text-box">Kerzenschein und Räucherduft, Weihnachten liegt in der Luft.</p>
+                  <div class="h-full content-center hidden calender-content hyphens-auto" lang="de">
+                    <p class="text-xs md:text-2xl text-center text-box p-1">Kerzenschein und Räucherduft, Weihnachten liegt in der Luft.</p>
                   </div>
             </div>
                 <div class="md:col-span-2 col-span-4 md:row-span-1 row-span-4 col-start-7 row-start-10 bg-christmas-red calender-door" data-day-number="13">
                   <div class="text-box calender-number">
                     <p class="text-6xl md:text-7xl">13</p>
               </div>
-              <div class="p-4 hidden calender-content">
-                <p class="text-3xl text-center text-box align-middle">Weihnachten ist keine Jahreszeit. Es ist ein Gefühl.</p>
+              <div class="hidden calender-content hyphens-auto" lang="de">
+                <p class="text-xs md:text-3xl text-center text-box align-middle">Weihnachten ist keine Jahreszeit. Es ist ein Gefühl.</p>
               </div>
             </div>
                 <div class="col-span-2 md:row-span-2 row-span-4 col-start-1 bg-christmas-yellow calender-door" data-day-number="12">
                   <div class="text-box bg-christmas-yellow-stars h-full bg-cover md:bg-contain calender-number">
                     <p class="text-4xl md:text-8xl">12</p>
               </div>
-              <div class="p-4 hidden calender-content">
-                <p class="text-3xl text-center text-box align-middle">Ein Glücksstern für kleine und große Träume.</p>
+              <div class="hidden calender-content break-normal hyphens-auto" lang="de">
+                <p class="text-xs md:text-3xl text-center text-box align-middle p-1">Ein Glücksstern für kleine und große Träume.</p>
               </div>
             </div>
                 <div class="col-span-2 md:row-span-5 row-span-4 col-start-3 md:row-start-6 row-start-14 bg-christmas-green calender-door" data-day-number="22">
                   <div class="text-box calender-number">
                     <p class="text-4xl md:text-8xl">22</p>
               </div>
-              <div class="p-4 h-full content-center hidden calender-content">
-                <p class="text-4xl text-center text-box">Nun leuchten helle Weihnachts-kerzen und zaubern Glück und Freud’ in alle Herzen.</p>
+              <div class="h-full content-center hidden calender-content hyphens-auto" lang="de">
+                <p class="text-xs md:text-4xl text-center text-box">Nun leuchten helle Weihnachtskerzen und zaubern Glück und Freud’ in alle Herzen.</p>
               </div>
             </div>
                 <div class="md:col-span-5 col-span-8 md:row-span-5 row-span-4 col-start-5 md:row-start-6 row-start-14 bg-christmas-red calender-door" data-day-number="24">
@@ -171,7 +154,7 @@
                     <img class="size-28 md:size-64" src="./assets/img/geschenke.png" alt="">
                     <p class="text-7xl md:text-9xl">24</p>
               </div>
-              <div class="p-4 h-full hidden calender-content">
+              <div class="h-full hidden calender-content">
                 <img class="object-cover h-full" src="./assets/img/weihnachtsmann2.jpg" />
               </div>
             </div>
@@ -179,8 +162,8 @@
                   <div class="text-box calender-number">
                     <p class="text-6xl md:text-7xl">9</p>
               </div>
-              <div class="p-4 hidden calender-content">
-                <p class="text-xl text-center text-box align-middle">Was ist ein Keks unterm Baum? Ein schattiges Plätzchen!</p>
+              <div class="hidden calender-content hyphens-auto" lang="de">
+                <p class="text-xs md:text-xl text-center text-box align-middle p-1">Was ist ein Keks unterm Baum? Ein schattiges Plätzchen!</p>
               </div>
             </div>
                 <div class="md:col-span-2 col-span-3 md:row-span-6 row-span-3 col-start-1 row-start-16 bg-christmas-red calender-door" data-day-number="14">
@@ -188,7 +171,7 @@
                     <img class="size-10 md:size-24" src="./assets/icons/snowflake-red.svg" alt="">
                     <p class="text-5xl md:text-9xl">14</p>
               </div>
-              <div class="p-4 h-full hidden calender-content">
+              <div class="h-full hidden calender-content">
                 <img class="object-cover h-full" src="./assets/img/baum2.jpg" />
               </div>
             </div>
@@ -196,15 +179,15 @@
                   <div class="text-box calender-number">
                     <p class="text-7xl md:text-8xl">5</p>
               </div>
-              <div class="p-4 hidden calender-content">
-                <p class="text-s text-center text-box align-middle">Wenn im hellen Glanz erstrahlen die Kerzen am Weihnachtsbaum wünsche ich Dir mit diesen Zeilen einen schönen Weihnachtstraum.</p>
+              <div class="hidden calender-content hyphens-auto" lang="de">
+                <p class="text-xs md:text-s text-center text-box align-middle">Wenn im hellen Glanz erstrahlen die Kerzen am Weihnachtsbaum wünsche ich Dir mit diesen Zeilen einen schönen Weihnachtstraum.</p>
               </div>
             </div>
                 <div class="md:col-span-1 col-span-3 md:row-span-3 row-span-5 md:col-start-5 col-start-10 row-start-14 bg-christmas-red calender-door" data-day-number="8">
                   <div class="text-box calender-number">
                     <p class="text-6xl md:text-8xl">8</p>
               </div>
-              <div class="p-4 h-full hidden calender-content">
+              <div class="h-full hidden calender-content">
                 <img class="object-cover h-full" src="./assets/img/weihnachten.jpg" />
               </div>
             </div>
@@ -213,7 +196,7 @@
                     <img class="size-12 md:size-28" src="./assets/icons/christmas-sled-sleigh.svg" alt="">
                     <p class="text-5xl md:text-8xl">16</p>
               </div>
-              <div class="p-4 h-full hidden calender-content">
+              <div class="h-full hidden calender-content">
                 <img class="object-cover h-full" src="./assets/img/zug.jpg" />
               </div>
             </div>
@@ -222,15 +205,15 @@
                     <img class="size-10 md:size-20" src="./assets/icons/snowflake.svg" alt="">
                     <p class="text-5xl md:text-8xl">2</p>
               </div>
-              <div class="p-4 hidden calender-content">
-                <p class="text-s text-center text-box align-middle">Vom Tage bleibt nicht mehr viel Zeit, besser ist es, wenn es schneit, da könnt ihr rodeln, tollen, Schneemann bauen, ohne finster dreizuschauen.</p>
+              <div class="hidden calender-content hyphens-auto" lang="de">
+                <p class="text-xs md:text-s text-center text-box align-middle">Vom Tage bleibt nicht mehr viel Zeit, besser ist es, wenn es schneit, da könnt ihr rodeln, tollen, Schneemann bauen, ohne finster dreizuschauen.</p>
               </div>
             </div>
                 <div class="col-span-6 md:col-span-2 md:row-span-4 row-span-2 md:col-start-10 col-start-1 md:row-start-10 row-start-17 bg-christmas-red calender-door" data-day-number="20">
                   <div class="text-box bg-christmas-red-stars bg-cover md:bg-contain h-full calender-number">
                     <p class="text-4xl md:text-9xl">20</p>
             </div>
-              <div class="p-4 hidden calender-content">
+              <div class="hidden calender-content hyphens-auto" lang="de">
                 <p class="text-4xl text-center text-box align-middle">Weihnachten ist, wenn die besten Geschenke am Tisch sitzen und nicht unterm Baum liegen.</p>
               </div>
             </div> 
@@ -238,15 +221,15 @@
                   <div class="text-box calender-number">
                     <p class="text-4xl md:text-7xl">7</p>
             </div>
-              <div class="p-4 hidden calender-content">
-                <p class="text-m text-center text-box align-middle">Weih-nachten ist die große Zeit des Zuviel.</p>
+              <div class="hidden calender-content hyphens-auto" lang="de">
+                <p class="text-xs md:text-m text-center text-box align-middle">Weihnachten ist die große Zeit des Zuviel.</p>
               </div>
             </div> 
                 <div class="md:col-span-1 col-span-2 md:row-span-2 row-span-2 md:col-start-12 col-start-11 md:row-start-14 row-start-18 bg-christmas-green calender-door" data-day-number="19">
                   <div class="text-box calender-number">
                     <p class="text-4xl md:text-7xl">19</p>
             </div>
-              <div class="p-4 h-full hidden calender-content">
+              <div class="h-full hidden calender-content">
                 <img class="object-cover h-full" src="./assets/img/zug2.1.jpg" />
               </div>
             </div>
@@ -254,13 +237,13 @@
         </div>
     </main>
     <div id="popup" class="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 backdrop-blur-md hidden">
-      <div class="relative bg-cover bg-center w-auto h-auto p-4 aspect-[1440/253] md:min-h-[20%] content-center" style="background-image: url('./assets/img/sternhintergrund.jpg');">
+      <div class="relative bg-cover bg-center w-auto h-auto p-4 aspect-[1440/253] max-w-[95%] min-w-[70%] md:min-h-[20%] content-center" style="background-image: url('./assets/img/sternhintergrund.jpg');">
           <div class="inset-0 flex items-center justify-center">
-            <button id="closeButton" class="absolute top-2 right-2 flex items-center justify-center w-10 h-10 rounded-xl bg-white shadow-md">
+            <button id="closeButton" class="absolute top-2 right-2 flex items-center justify-center w-5 h-5 md:w-10 md:h-10 rounded-xl bg-white shadow-md">
               <span class="sr-only">Schließen</span>
-              <span class="absolute top-0 left-0 w-full h-full flex items-center justify-center font-bold text-black">x</span>
+              <span class="top-0 left-0 w-full h-full -mt-0.5 items-center justify-center font-bold text-black text-sm md:text-base">x</span>
           </button>
-              <p class="text-black md:text-2xl text-lg">Türchen kann nicht geöffnet werden, da die Zahl des Türchens nicht <br> dem heutigen oder einem vorherigen Tag in diesem Monat entspricht.</p>
+              <p class="text-black md:text-2xl text-sm hyphens-auto" lang="de">Türchen kann nicht geöffnet werden, da die Zahl des Türchens nicht <br> dem heutigen oder einem vorherigen Tag in diesem Monat entspricht.</p>
           </div>
       </div>
   </div>

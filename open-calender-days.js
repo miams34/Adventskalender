@@ -17,10 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
             door.addEventListener('click', function() {
                 openCalenderDoor(dayNumber, todayDay, todayMonth, door);
             });
-
-            door.addEventListener('touchstart', function() {
-                openCalenderDoor(dayNumber, todayDay, todayMonth, door);
-            });
     });
 
     const closeButton = document.getElementById('closeButton');
